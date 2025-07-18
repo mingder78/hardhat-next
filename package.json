@@ -1,7 +1,7 @@
 {
   "name": "hardhat-next",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "devDependencies": {
     "@nomicfoundation/hardhat-ignition": "^3.0.0-next.21",
     "@nomicfoundation/hardhat-toolbox-viem": "^5.0.0-next.21",
@@ -12,5 +12,11 @@
     "viem": "^2.32.0",
     "@types/bun": "latest"
   },
-  "module": "index.ts"
+  "module": "index.ts",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "@openzeppelin/contracts-upgradeable": "^5.4.0",
+    "crypto": "^1.0.1",
+    "openzeppelin-solidity": "OpenZeppelin/openzeppelin-contracts"
+  }
 }

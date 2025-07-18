@@ -22,7 +22,25 @@ Deployed Addresses
 DeployAccount#SimpleAccountFactory - 0x4df8b7F4E872b2A43A6997752316CDd99abD35A6
 ```
 
+## verify
 
+```
+npx hardhat verify --network sepolia 0x4df8b7F4E872b2A43A6997752316CDd99abD35A6 "0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789"
+
+✅ Submitted source code for verification on Etherscan:
+
+  contracts/SimpleAccountFactory.sol:SimpleAccountFactory
+  Address: 0x4df8b7F4E872b2A43A6997752316CDd99abD35A6
+
+⏳ Waiting for verification result...
+
+
+🎉 Contract verified successfully on Etherscan!
+
+  contracts/SimpleAccountFactory.sol:SimpleAccountFactory
+  Explorer: https://sepolia.etherscan.io/address/0x4df8b7F4E872b2A43A6997752316CDd99abD35A6#code
+
+```
 
 
 

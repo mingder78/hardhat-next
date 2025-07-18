@@ -1,8 +1,9 @@
 {
   "name": "hardhat-next",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "devDependencies": {
+    "@nomicfoundation/hardhat-verify": "^3.0.0-next.21",
     "@nomicfoundation/hardhat-ignition": "^3.0.0-next.21",
     "@nomicfoundation/hardhat-toolbox-viem": "^5.0.0-next.21",
     "@types/node": "^22.16.4",

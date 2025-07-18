@@ -1,6 +1,7 @@
 import type { HardhatUserConfig } from "hardhat/config";
 import hardhatToolboxViemPlugin from "@nomicfoundation/hardhat-toolbox-viem";
-import {configVariable} from "hardhat/config";
+import  hardhatVerifyPlugin from "@nomicfoundation/hardhat-verify";
+import { configVariable } from "hardhat/config";
 import "dotenv/config";
 
 const config: HardhatUserConfig = {
@@ -11,7 +12,7 @@ const config: HardhatUserConfig = {
    * Note: A `hardhat-toolbox` like plugin for Hardhat 3 hasn't been defined yet,
    * so this list is larger than what you would normally have.
    */
-  plugins: [hardhatToolboxViemPlugin],
+  plugins: [hardhatToolboxViemPlugin, hardhatVerifyPlugin],
   solidity: {
     /*
      * Hardhat 3 supports different build profiles, allowing you to configure
@@ -77,6 +78,13 @@ const config: HardhatUserConfig = {
       chainType: "l1",
       url: configVariable("SEPOLIA_RPC_URL"),
       accounts: [configVariable("PRIVATE_KEY")],
+    },
+  },
+  verify: {
+    etherscan: {
+      // Your API key for Etherscan
+      // Obtain one at https://etherscan.io/
+      apiKey: configVariable("ETHERSCAN_API_KEY")
     },
   },
 };

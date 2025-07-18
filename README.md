@@ -1,3 +1,31 @@
+# SimpleAccountFactory
+
+```
+npx hardhat ignition deploy ignition/modules/DeployAccount.ts --network sepolia
+✔ Confirm deploy to network sepolia (11155111)? … yes
+
+Hardhat Ignition 🚀
+
+Deploying [ DeployAccount ]
+
+Batch #1
+  Executed DeployAccount#SimpleAccountFactory
+
+Batch #2
+  Executing DeployAccount#create_account...
+
+
+[ DeployAccount ] successfully deployed 🚀
+
+Deployed Addresses
+
+DeployAccount#SimpleAccountFactory - 0x4df8b7F4E872b2A43A6997752316CDd99abD35A6
+```
+
+
+
+
+
 # Hardhat 3 Alpha: `node:test` and `viem` example project
 
 > **WARNING**: This example project uses Hardhat 3, which is still in development. Hardhat 3 is not yet intended for production use.
